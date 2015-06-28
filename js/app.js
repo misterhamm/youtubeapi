@@ -7,6 +7,7 @@ $(document).ready(function(){
 /*Search Functionality*/
   $('#search-term').submit(function(event){
       event.preventDefault();
+      $('#search-results').html("");
       var searchTerm = $('#query').val();
       getRequest(searchTerm);
   });
